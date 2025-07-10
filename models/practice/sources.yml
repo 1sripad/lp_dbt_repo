@@ -1,0 +1,8 @@
+sources:
+- name: alias
+  database : airbnb
+  schema : raw
+  tables :
+   - name : raw_customers
+    
+

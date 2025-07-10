@@ -1,12 +1,8 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
+
 
 with all_listings as 
 (
-    select * from airbnb.raw.raw_listings
+    select * from {{source('airbnb','listings')}}
 )
 SELECT
     id AS listing_id,
