@@ -1,4 +1,9 @@
-    
+{{
+    config(
+        materialized='table'
+    )
+}}    
+
 with cte as (
     select 
         customer_id,
